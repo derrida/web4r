@@ -15,11 +15,11 @@
                 :documentation "A label of a id slot.")
    (pass-label  :initform "Password" :initarg :pass-label  :type string
                 :documentation "A label of a password slot.")
-   (login-page  :initform "login"    :initarg :login-page  :type symbol
+   (login-page  :initform 'login     :initarg :login-page  :type symbol
                 :documentation "A name of the login page.")
-   (logout-page :initform "logout"   :initarg :logout-page :type symbol
+   (logout-page :initform 'logout    :initarg :logout-page :type symbol
                 :documentation "A name of the logout page.")
-   (regist-page :initform "regist"   :initarg :regist-page :type symbol
+   (regist-page :initform 'regist    :initarg :regist-page :type symbol
                 :documentation "A name of the regist page."))
   (:documentation "An instance of this class, set to *user*, is used
  to manage authentication. The default user persistent class is 'user,
